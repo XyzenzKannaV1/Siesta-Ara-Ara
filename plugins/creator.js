@@ -6,13 +6,13 @@ let name = await conn.getName(who)
 
 
 if (command == 'owner') {
- let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:WhatsApp;Saya Owner 𝗬𝗧 𝗠𝗮𝘅𝘅𝘆;Bot;;Md\nFN:Saya Owner 𝗬𝗧 𝗠𝗮𝘅𝘅𝘆 Bot WhatsApp, Md\nNICKNAME:👑 Owner 𝗬𝗧 𝗠𝗮𝘅𝘅𝘆 Bot\nORG:Wudy\nTITLE:soft\nitem1.TEL;waid=6285380166282:+62 853-8016-6282\nitem1.X-ABLabel:📞 Nomor Owner\nitem2.URL:https://s.id/Cerdasin62\nitem2.X-ABLabel:💬 More\nitem3.EMAIL;type=INTERNET:maxxybotz@mail.com\nitem3.X-ABLabel:💌 Mail Owner 𝗬𝗧 𝗠𝗮𝘅𝘅𝘆 𝗕𝗼t𝘇\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:💬 More\nitem4.X-ABLabel:📍 Lokasi Saya\nBDAY;value=date:🔖 13 January 2001\nEND:VCARD`
+ let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:WhatsApp;Saya Owner 𝗬𝗧 𝗠𝗮𝘅𝘅𝘆;Bot;;Md\nFN:Saya Owner 𝗬𝗧 𝗠𝗮𝘅𝘅𝘆 Bot WhatsApp, Md\nNICKNAME:👑 Owner 𝗬𝗧 𝗠𝗮𝘅𝘅𝘆 Bot\nORG:Wudy\nTITLE:soft\nitem1.TEL;waid=6287824899711:+62 878-2489-9711\nitem1.X-ABLabel:📞 Nomor Owner\nitem2.URL:https://s.id/Cerdasin62\nitem2.X-ABLabel:💬 More\nitem3.EMAIL;type=INTERNET:LeoPyth@gmail.com\nitem3.X-ABLabel:💌 Mail Owner  𝗠𝗮𝘅𝘅𝘆 𝗕𝗼t𝘇\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:💬 More\nitem4.X-ABLabel:📍 Lokasi Saya\nBDAY;value=date:🔖 13 January 2001\nEND:VCARD`
 const tag_own = await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { quoted: fakes })
 let caption = `👋 Hai *${name} @${who.split("@")[0]}*, Nih Owner *${conn.user.name}* kak`
     await conn.sendButton(m.chat, caption, author, null, [['🎀 Sapa Owner', 'Huuu']], m, { quoted: tag_own, mentions: conn.parseMention(caption) })
 }
 if (command == 'pengembang') {
-  let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;${author};;;\nFN:${author}\nORG:${author}\nTITLE:\nitem1.TEL;waid=6285380166282:+62 853-8016-6282\nitem1.X-ABLabel:${author}\nX-WA-BIZ-DESCRIPTION:${htjava} Nih pengembang ku kack yg mengaktifkan aq.\nX-WA-BIZ-NAME:${author}\nEND:VCARD`
+  let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;${author};;;\nFN:${author}\nORG:${author}\nTITLE:\nitem1.TEL;waid=6287824899711:+62 878-2489-9711\nitem1.X-ABLabel:${author}\nX-WA-BIZ-DESCRIPTION:${htjava} Nih pengembang ku kack yg mengaktifkan aq.\nX-WA-BIZ-NAME:${author}\nEND:VCARD`
 await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { quoted: fakes })
 }
 if (command == 'creator') {
