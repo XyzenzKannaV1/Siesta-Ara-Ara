@@ -111,7 +111,7 @@ global.xckey = '7iyNa0qA'
 /*Number*/
 global.nomorbot = '6285325342577'
 global.nomorown = '6285325342577'
-global.namebot = '「 audikirito 𝘽𝙤𝙩𝙯あ⁩ 」'
+global.namebot = '「 audikirito botz 」'
 global.nameown = '「 Oᴡɴᴇʀ 」'
 
 global.wm = '                「 audikrito-MODS-BOT 」' //Main Watermark
