@@ -6,16 +6,16 @@ import moment from 'moment-timezone'
 
 /*Oᴡɴᴇʀ number*/
 global.owner = [
-  ['6287824899711', '️One', true],
-  ['6285380166282', '️Two', true],
-  ['6285380166282', '️Three', true],
-  ['6285380166282', '️Four', true],
-  ['6285380166282', '️Five', true],
-  ['6285380166282', '️Six', true],
-  ['6285380166282', '️Seven', true],
-  ['6285380166282', '️Eight', true],
-  ['6285380166282', '️Nine', true],
-  ['6285380166282', '️Teen', true]
+  ['6283896480283', '️One', true],
+  ['-', '️Two', true],
+  ['-', '️Three', true],
+  ['-', '️Four', true],
+  ['-', '️Five', true],
+  ['-', '️Six', true],
+  ['-', '️Seven', true],
+  ['-', '️Eight', true],
+  ['-', '️Nine', true],
+  ['-', '️Teen', true]
 ]
 global.mods = []
 global.prems = []
@@ -89,15 +89,15 @@ global.xckey = '7iyNa0qA'
 */
 
 /*Number*/
-global.nomorbot = '6285295374964'
-global.nomorown = '6287824899711'
-global.namebot = '「 𝙈𝙖𝙭𝙭𝙮 𝘽𝙤𝙩𝙯あ⁩ 」'
+global.nomorbot = '6283896480283'
+global.nomorown = '6283896480283'
+global.namebot = '「 audikirito 𝘽𝙤𝙩𝙯あ⁩ 」'
 global.nameown = '「 Oᴡɴᴇʀ 」'
 
 /*Watermark*/
-global.wm = '                「 𝙈𝙖𝙭𝙭𝙮 𝘽𝙤𝙩𝙯あ⁩ 」'
+global.wm = '                「 audikirito 𝘽𝙤𝙩𝙯あ⁩ 」'
 global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘օառɛʀ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺ 𝙈𝙖𝙭𝙭𝙮 𝘽𝙤𝙩𝙯'
+global.wm3 = '⫹⫺ audikirito 𝘽𝙤𝙩𝙯'
 global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`
 global.titlebot = `⫹⫺ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}\n⫹⫺ Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
@@ -453,18 +453,18 @@ global.logo = 'https://i.pinimg.com/564x/f7/d2/e4/f7d2e48fd59a8c01cd396bfc70b0a2
 global.gcwangsaf = 'https://chat.whatsapp.com/K6femuL8bLx6HqWS7wXofI'
 
 /*Donasi*/
-global.saweria = 'https://saweria.co/MaxxyBotz'
-global.dana = '085380166282'
-global.pulsa = '085295374964'
+global.saweria = 'https://saweria.co/'
+global.dana = '083896480283'
+global.pulsa = '083896480283'
 global.trakteer = ''
 global.paypal = ''
 global.gopay = ''
-global.pdana = '085380166282'
-global.povo = ''
+global.pdana = '083896480283'
+global.povo = '083896480283'
 global.pgopay = ''
-global.ppulsa = '085295374964'
-global.ppulsa2 = '085380166282'
-global.psaweria = 'https://saweria.com/MaxxyBotz'
+global.ppulsa = '083896480283'
+global.ppulsa2 = '083896480283'
+global.psaweria = 'https://saweria.com/'
 
 /*Emoji*/
 global.rpg = {
