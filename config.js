@@ -4,26 +4,6 @@ import { fileURLToPath } from 'url'
 import fs from 'fs'
 import moment from 'moment-timezone'
 
-/*============= WAKTU =============*/
-let wibh = moment.tz('Asia/Jakarta').format('HH')
-    let wibm = moment.tz('Asia/Jakarta').format('mm')
-    let wibs = moment.tz('Asia/Jakarta').format('ss')
-    let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
-    
-    let d = new Date(new Date + 3600000)
-    let locale = 'id'
-    // d.getTimeZoneOffset()
-    // Offset -420 is 18.00
-    // Offset    0 is  0.00
-    // Offset  420 is  7.00
-    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
-    let week = d.toLocaleDateString(locale, { weekday: 'long' })
-    let date = d.toLocaleDateString(locale, {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    })
-    
 /*Oᴡɴᴇʀ number*/
 global.owner = [
   ['6283896480283', '️One', true],
@@ -98,12 +78,10 @@ global.xckey = '7iyNa0qA'
 'bukanitucuy14315195'
 '85faf717d0545d14074659ad'
 'ed78c137a46873c5b8e5fe3b'
-
 -XTEAM-
 '5bd33b276d41d6b4'
 'NezukoTachibana281207'
 'HIRO'
-
 -Neoxr-
 '5VC9rvNx'
 */
@@ -114,14 +92,13 @@ global.nomorown = '6285325342577'
 global.namebot = '「 audikirito botz 」'
 global.nameown = '「 Oᴡɴᴇʀ 」'
 
-global.wm = '                「 audikrito-MODS-BOT 」' //Main Watermark
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘audikirito-MODS-BOT ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺ audikirito-MODS-BOT '
-global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
-global.bottime = `T I M E : ${wktuwib}`
-global.titlebot = `⫹⫺ WhatsApp Bot | By audikirito-MODS-DEV`
-global.packname = '☂︎ ᴄʀᴇᴀᴛᴇᴅ ʙʏ'
-global.author = '                「 audikirito-MODS-BOT  あ」'
+/*Watermark*/
+global.wm = '                「 audikirito botz⁩ 」'
+global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘օառɛʀ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm3 = '⫹⫺ audikirito 𝘽𝙤𝙩𝙯'
+global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
+global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`
+global.titlebot = `⫹⫺ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}\n⫹⫺ Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
 
 /*Thumbnail*/
 global.thumb = 'https://i.ibb.co/ccY2Q0k/20220429-191026.jpg'
@@ -412,10 +389,6 @@ global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1
 'https://i.pinimg.com/originals/fd/21/41/fd21419275236bb153de3c8dcbbf3bf9.jpg',
 'https://i.pinimg.com/originals/80/4f/1a/804f1a05f9996c96a2d492b4854b7fd5.jpg']
 
-/*============== TEXT ==============*/
-global.wait = '```「▰▰▰▱▱▱▱▱▱▱」Loading...```'
-global.eror = '```404 error```'
-
 /*Link*/
 global.sig = 'https://www.instagram.com/audi surya wijaya'
 global.sgh = 'https://www.github.com/audikirito'
@@ -426,8 +399,8 @@ global.sfb = 'https://www.facebook.com/audi surya wijaya'
 global.syt = 'https://youtube.com/channel/'
 
 /*Nsfw*/
-global.optsnsfw = false
-global.premnsfw = false
+global.optsnsfw = true
+global.premnsfw = true
 
 /*Type*/
 global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
@@ -441,35 +414,33 @@ global.fsizedoc = '1'.repeat(10)
 global.fpagedoc = '1'.repeat(10)
 global.thumbdoc = 'https://telegra.ph/file/5bc4d38632b6eb3c5041a.jpg'
 
-/*=========== HIASAN ===========*/
-// DEFAULT MENU
-global.dmenut = 'ଓ═┅═━–〈' //top
-global.dmenub = '┊↬' //body
-global.dmenub2 = '┊' //body for info cmd on Default menu
-global.dmenuf = '┗––––––––––✦' //footer
+/*Hiasan*/
+global.dmenut = '❏─┅──┅〈'
+global.dmenub = '┊•'
+global.dmenub2 = '┊'
+global.dmenuf = '┗┅────────┅✦'
 
-// COMMAND MENU
-global.dashmenu = '┅═┅═❏ *DASHBOARD* ❏═┅═┅'
-global.cmenut = '❏––––––『' //top
-global.cmenuh = '』––––––' //header
-global.cmenub = '┊✦ ' //body
-global.cmenuf = '┗━═┅═━––––––๑\n' //footer
-global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
-global.pmenus = '✦' //pembatas menu selector
+/*Hiasan*/
+global.dashmenu = '┅────┅─❏ *𝐃𝐀𝐒𝐇𝐁𝐎𝐀𝐑𝐃* ❏─┅────┅'
+global.cmenut = '❏┅────┅『'
+global.cmenuh = '』┅────┅'
+global.cmenub = '┊✦ '
+global.cmenuf = '┗──┅───────┅๑\n'
+global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     '
+global.pmenus = '✦'
 
-global.htki = '––––––『' // Hiasan Titile (KIRI)
-global.htka = '』––––––' // Hiasan Title  (KANAN)
-global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
-global.lolm = 'Ⓛ' //LOGO LIMIT/FREE ON MENU.JS
-global.htjava = '⫹⫺'    //hiasan Doang :v
-global.hsquere = ['⛶','❏','⫹⫺']
+global.htki = '┅────┅『'
+global.htka = '』┅────┅'
+global.lopr = '🅟'
+global.lolm = 'Ⓛ'
+global.htjava = '⫹⫺'
 
 /*Watermark*/
 global.stickpack = '.'
-global.stickauth = `☂︎ audikirito 𝘽𝙤𝙩𝙯 乂 Leo 🇮🇩\n⫹⫺ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩\nwa.me/${global.nomorbot}`
+global.stickauth = `☂︎ audikirito botz 乂 Leo 🇮🇩\n⫹⫺ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩\nwa.me/${global.nomorbot}`
 global.packname = '☂︎ ᴄʀᴇᴀᴛᴇᴅ ʙʏ'
-global.author = ' audikirito 𝘽𝙤𝙩𝙯 乂 Leo 🇮🇩'
-global.multiplier = 38
+global.author = ' audikirito botz 乂 Leo 🇮🇩'
+global.multiplier = 10
 
 /*Pesan*/
 global.eror = '*ᴇʀᴏʀʀ!*'
@@ -477,7 +448,7 @@ global.wait = '*ᴡᴀɪᴛ!*'
 global.render = '*ʀᴇɴᴅᴇʀ!*'
 global.webs = 'https://s.id/Cerdasin62'
 global.logo = 'https://i.pinimg.com/564x/f7/d2/e4/f7d2e48fd59a8c01cd396bfc70b0a2d1.jpg'
-global.gcwangsaf = 'https://chat.whatsapp.com/K6femuL8bLx6HqWS7wXofI'
+global.gcwangsaf = 'https://chat.whatsapp.com/'
 
 /*Donasi*/
 global.saweria = 'https://saweria.co/'
