@@ -23,9 +23,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
       month: 'long',
       year: 'numeric'
     })
-      
     
-
 /*Oᴡɴᴇʀ number*/
 global.owner = [
   ['6283896480283', '️One', true],
@@ -116,13 +114,14 @@ global.nomorown = '6285325342577'
 global.namebot = '「 audikirito 𝘽𝙤𝙩𝙯あ⁩ 」'
 global.nameown = '「 Oᴡɴᴇʀ 」'
 
-/*Watermark*/
-global.wm = '                「 audikirito 𝘽𝙤𝙩𝙯あ⁩ 」'
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘օառɛʀ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺ audikirito 𝘽𝙤𝙩𝙯'
-global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
-global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`
-global.titlebot = `⫹⫺ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}\n⫹⫺ Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
+global.wm = '                「 audikrito-MODS-BOT 」' //Main Watermark
+global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘audikirito-MODS-BOT ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm3 = '⫹⫺ audikirito-MODS-BOT '
+global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
+global.bottime = `T I M E : ${wktuwib}`
+global.titlebot = `⫹⫺ WhatsApp Bot | By audikirito-MODS-DEV`
+global.packname = '☂︎ ᴄʀᴇᴀᴛᴇᴅ ʙʏ'
+global.author = '                「 audikirito-MODS-BOT  あ」'
 
 /*Thumbnail*/
 global.thumb = 'https://i.ibb.co/ccY2Q0k/20220429-191026.jpg'
