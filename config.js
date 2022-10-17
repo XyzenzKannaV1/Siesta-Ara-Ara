@@ -4,10 +4,32 @@ import { fileURLToPath } from 'url'
 import fs from 'fs'
 import moment from 'moment-timezone'
 
+/*============= WAKTU =============*/
+let wibh = moment.tz('Asia/Jakarta').format('HH')
+    let wibm = moment.tz('Asia/Jakarta').format('mm')
+    let wibs = moment.tz('Asia/Jakarta').format('ss')
+    let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
+    
+    let d = new Date(new Date + 3600000)
+    let locale = 'id'
+    // d.getTimeZoneOffset()
+    // Offset -420 is 18.00
+    // Offset    0 is  0.00
+    // Offset  420 is  7.00
+    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
+    let week = d.toLocaleDateString(locale, { weekday: 'long' })
+    let date = d.toLocaleDateString(locale, {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    })
+      
+    
+
 /*Oᴡɴᴇʀ number*/
 global.owner = [
   ['6283896480283', '️One', true],
-  ['-', '️Two', true],
+  ['6285325342577', '️Two', true],
   ['-', '️Three', true],
   ['-', '️Four', true],
   ['-', '️Five', true],
@@ -89,8 +111,8 @@ global.xckey = '7iyNa0qA'
 */
 
 /*Number*/
-global.nomorbot = '6283896480283'
-global.nomorown = '6283896480283'
+global.nomorbot = '6285325342577'
+global.nomorown = '6285325342577'
 global.namebot = '「 audikirito 𝘽𝙤𝙩𝙯あ⁩ 」'
 global.nameown = '「 Oᴡɴᴇʀ 」'
 
@@ -391,18 +413,22 @@ global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1
 'https://i.pinimg.com/originals/fd/21/41/fd21419275236bb153de3c8dcbbf3bf9.jpg',
 'https://i.pinimg.com/originals/80/4f/1a/804f1a05f9996c96a2d492b4854b7fd5.jpg']
 
+/*============== TEXT ==============*/
+global.wait = '```「▰▰▰▱▱▱▱▱▱▱」Loading...```'
+global.eror = '```404 error```'
+
 /*Link*/
-global.sig = 'https://www.instagram.com/maxxy_ofc'
-global.sgh = 'https://www.github.com/MaxxyBotz'
-global.sgc = 'https://chat.whatsapp.com/K6femuL8bLx6HqWS7wXofI'
+global.sig = 'https://www.instagram.com/audi surya wijaya'
+global.sgh = 'https://www.github.com/audikirito'
+global.sgc = 'https://chat.whatsapp.com/'
 global.sdc = ''
-global.snh = 'https://www.tiktok.com/@maxxy_0t'
-global.sfb = 'https://www.facebook.com/kahfiofc'
-global.syt = 'https://youtube.com/channel/UC6GPl9xMWL61NAXQb3HBrRw'
+global.snh = 'https://www.tiktok.com/@audisw'
+global.sfb = 'https://www.facebook.com/audi surya wijaya'
+global.syt = 'https://youtube.com/channel/'
 
 /*Nsfw*/
-global.optsnsfw = true
-global.premnsfw = true
+global.optsnsfw = false
+global.premnsfw = false
 
 /*Type*/
 global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
@@ -416,33 +442,35 @@ global.fsizedoc = '1'.repeat(10)
 global.fpagedoc = '1'.repeat(10)
 global.thumbdoc = 'https://telegra.ph/file/5bc4d38632b6eb3c5041a.jpg'
 
-/*Hiasan*/
-global.dmenut = '❏─┅──┅〈'
-global.dmenub = '┊•'
-global.dmenub2 = '┊'
-global.dmenuf = '┗┅────────┅✦'
+/*=========== HIASAN ===========*/
+// DEFAULT MENU
+global.dmenut = 'ଓ═┅═━–〈' //top
+global.dmenub = '┊↬' //body
+global.dmenub2 = '┊' //body for info cmd on Default menu
+global.dmenuf = '┗––––––––––✦' //footer
 
-/*Hiasan*/
-global.dashmenu = '┅────┅─❏ *𝐃𝐀𝐒𝐇𝐁𝐎𝐀𝐑𝐃* ❏─┅────┅'
-global.cmenut = '❏┅────┅『'
-global.cmenuh = '』┅────┅'
-global.cmenub = '┊✦ '
-global.cmenuf = '┗──┅───────┅๑\n'
-global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     '
-global.pmenus = '✦'
+// COMMAND MENU
+global.dashmenu = '┅═┅═❏ *DASHBOARD* ❏═┅═┅'
+global.cmenut = '❏––––––『' //top
+global.cmenuh = '』––––––' //header
+global.cmenub = '┊✦ ' //body
+global.cmenuf = '┗━═┅═━––––––๑\n' //footer
+global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
+global.pmenus = '✦' //pembatas menu selector
 
-global.htki = '┅────┅『'
-global.htka = '』┅────┅'
-global.lopr = '🅟'
-global.lolm = 'Ⓛ'
-global.htjava = '⫹⫺'
+global.htki = '––––––『' // Hiasan Titile (KIRI)
+global.htka = '』––––––' // Hiasan Title  (KANAN)
+global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
+global.lolm = 'Ⓛ' //LOGO LIMIT/FREE ON MENU.JS
+global.htjava = '⫹⫺'    //hiasan Doang :v
+global.hsquere = ['⛶','❏','⫹⫺']
 
 /*Watermark*/
 global.stickpack = '.'
-global.stickauth = `☂︎ 𝙈𝙖𝙭𝙭𝙮 𝘽𝙤𝙩𝙯 乂 Leo 🇮🇩\n⫹⫺ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩\nwa.me/${global.nomorbot}`
+global.stickauth = `☂︎ audikirito 𝘽𝙤𝙩𝙯 乂 Leo 🇮🇩\n⫹⫺ 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩\nwa.me/${global.nomorbot}`
 global.packname = '☂︎ ᴄʀᴇᴀᴛᴇᴅ ʙʏ'
-global.author = ' 𝙈𝙖𝙭𝙭𝙮 𝘽𝙤𝙩𝙯 乂 Leo 🇮🇩'
-global.multiplier = 10
+global.author = ' audikirito 𝘽𝙤𝙩𝙯 乂 Leo 🇮🇩'
+global.multiplier = 38
 
 /*Pesan*/
 global.eror = '*ᴇʀᴏʀʀ!*'
