@@ -15,6 +15,6 @@ let mangaingfo = `*Title:* ${title}
 }
 handler.help = ['manga <judul>']
 handler.tags = ['animsearch']
-handler.command = /^(manga)$/i
+handler.command = /^(manga|mangainfo)$/i
 //udah di maapin kan?
 export default handler
