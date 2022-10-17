@@ -93,12 +93,12 @@ global.namebot = '「 audikirito botz 」'
 global.nameown = '「 Oᴡɴᴇʀ 」'
 
 /*Watermark*/
+global.wm = '                「 audikrito-MODS-BOT 」' //Main Watermark
+global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘օառɛʀ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm3 = '⫹⫺ audikirito 𝘽𝙤𝙩𝙯'
 global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}`
 global.titlebot = `⫹⫺ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}\n⫹⫺ Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}`
-global.wm = '      「 audikirito botz⁩ 」'
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘օառɛʀ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺ audikirito 𝘽𝙤𝙩𝙯'
 
 /*Thumbnail*/
 global.thumb = 'https://i.ibb.co/ccY2Q0k/20220429-191026.jpg'
